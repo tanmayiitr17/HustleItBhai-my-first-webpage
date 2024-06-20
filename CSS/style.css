@@ -1,0 +1,284 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 40px;
+}
+
+
+/* Navigation Bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+#logo {
+    margin: 5px 20px;
+}
+
+#logo img {
+    margin: 1px 12px;
+    height: 40px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    padding: 5px 25px;
+    font-size: 1rem;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+}
+
+#home::before {
+    content: "";
+    background: url('../img/background/bgclass5.jpg') no-repeat center center/cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.92;
+}
+
+#home h1 {
+    margin: 5px;
+    color: white;
+}
+
+#home p {
+    color: white;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Cotent Section */
+
+#content .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content .box {
+
+    border: 2px solid black;
+    margin: 20px 35px;
+    padding: 5px;
+    width: 400px;
+    height: 330px;
+    border-radius: 34px;
+    background-color: rgb(237 235 235);
+}
+
+
+#content .box img {
+    height: 150px;
+    width: 190px;
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+#content .container h3 {
+    margin: 5px;
+}
+
+#content .container p {
+    font-family: 'Bree Serif', serif;
+}
+
+/* Material Section */
+
+
+#material::before {
+    content: "";
+    background: url('../img/content/material.jpg') no-repeat center center/cover;
+    position: absolute;
+    /* left: 0;
+    top: 0; */
+    height: 520px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+#material h1 {
+    color: black;
+    text-align: center;
+}
+
+#material-box {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+
+#material .material-item {
+    /* border: 4px solid grey; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 500px;
+    margin: 10px 15px;
+    border-radius: 15px;
+}
+
+
+#material .material-item img {
+    height: 260px;
+    width: 300px;
+    margin: 5px 5px;
+    border: 4px solid black;
+    border-radius: 20px;
+}
+
+
+
+/* Contact Section */
+
+#contact-us::before {
+    content: "";
+    background: url('../img/background/contact.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 659px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+
+#contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-us form {
+    width: 30%;
+    /* padding-bottom: 4px; */
+    font-family: 'Bree Serif', serif;
+}
+
+
+.contact-item label {
+    font-size: 1.3rem;
+}
+
+.contact-item input,
+.contact-item textarea {
+    width: 100%;
+    padding: 0.4rem;
+    font-family: 'Bree Serif', serif;
+
+
+}
+
+.contact-item input[type='submit'] {
+    width: 90%;
+    text-align: center;
+}
+
+/* Footer */
+#footer::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    z-index: -1;
+}
+
+#footer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+/* Utility Classes */
+.h-primary {
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 3rem;
+    padding: 5px;
+}
+
+.h-secondary {
+    font-family: 'Baloo Paaji 2', cursive;
+    color: black;
+    font-size: 1.7rem;
+    padding: 5px;
+}
+
+.btn {
+    cursor: pointer;
+    margin: 28px;
+    padding: 10px;
+    background-color: black;
+    font-size: 1.2rem;
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    font-family: 'Baloo Paaji 2', cursive;
+
+}
+
+
+.center {
+    text-align: center;
+    justify-content: center;
+}

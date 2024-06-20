@@ -1,0 +1,106 @@
+ /* Navigation Section */
+ #navbar {
+     flex-direction: column;
+ }
+
+ #navbar ul li a {
+
+     padding: 0px 15px;
+     font-size: 10px;
+
+ }
+
+
+ #navbar::before {
+     width: 105%;
+ }
+
+ /* Home Section */
+
+ #home::before {
+     height: 340px;
+     width: 104%;
+ }
+
+ #home p {
+     font-size: 15px;
+ }
+
+ #home h1 {
+     margin: 0px;
+
+ }
+
+ /* Content Section */
+ #content .container {
+     flex-direction: column;
+ }
+
+ #content .box {
+     width: 215px;
+     height: 380px;
+ }
+
+ #content .box img {
+     height: 125px;
+     width: 150px;
+     margin: 20px auto;
+     border: 3px solid black;
+ }
+
+ /* Material Section */
+ #material-box {
+     flex-wrap: wrap;
+ }
+
+ #material::before {
+     height: 1295px;
+     width: 104%;
+ }
+
+ #material .material-item img {
+     height: 175px;
+     width: 215px;
+     margin: 0px 0px;
+
+ }
+
+ #material .material-item {
+     height: 270px;
+     width: 500px;
+ }
+
+ /* Contact Us Section */
+
+ #contact-us::before {
+
+     width: 107%;
+ }
+
+ #contact-us form {
+     width: 70%;
+ }
+
+ /* Footer Section */
+
+ #footer::before {
+     height: 57px;
+     width: 107%;
+ }
+
+ /* Utility Classes */
+ .h-primary {
+     font-size: 1.68rem;
+     padding: 0px;
+ }
+
+ .h-secondary {
+     font-size: 1.3rem;
+     padding: 3px;
+ }
+
+ .btn {
+     margin: 25px;
+     padding: 5px;
+     font-size: 1rem;
+ }
